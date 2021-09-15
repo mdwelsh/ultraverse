@@ -1,4 +1,78 @@
 <!DOCTYPE html>
 <html>
-Ultraverse Games
+
+<head>
+	<title>
+		Ultraverse Games
+	</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+		<!-- Header goes here -->
+		<span class="headerbutton">
+      Home
+    </span>
+    |
+    <span class="headerbutton">
+      About us
+    </span>
+    |
+    <span class="headerbutton">
+      Contact
+    </span>
+  </div>
+  <div class="maintitle">
+    Ultraverse Games
+    <!-- Main title goes here -->
+  </div>
+  <div class="maintext">
+    <!-- Main text goes here -->
+    We are an independent games company based in Seattle, WA.
+    We develop tabletop and computer games aimed at kids.
+  </div>
+  <div class="footer">
+    <!-- Footer goes here -->
+    ©2021 Ultraverse Games, LLC.
+  </div>
+
+  <script>
+    console.log("running the script");
+    // Get the element with class "maintitle".
+    // We use [0] below to get the first (and only) element
+    // with this class.
+    var title = document.getElementsByClassName('maintitle')[0]; 
+
+    var xpos = 1;
+    var xmul = 10;
+    var ypos = -1;
+    var ymul = 10;
+    var counter = 0;
+
+    // Set a timer to run every 10 ms.
+    setInterval( () => {
+      title.style.color = "#fff";
+      title.style.textShadow = `#fff ${xpos}px ${ypos}px 4px, #ff0 ${xpos*2}px ${ypos*2}px 10px, #ff8000 ${xpos*xmul}px ${ypos*ymul}px 20px, red ${(xpos*xmul) + (xpos*8)}px ${(ypos*ymul) + (ypos*8)}px 40px`;
+
+      counter += 1;
+      //pos = Math.floor(Math.random() * -2);
+      xmul = Math.floor((Math.cos(counter / 7)*10)+Math.random()*10);
+      ymul = Math.floor((Math.sin(counter / 11)*10)+Math.random()*10);
+
+    }, 25);
+
+  </script>
+
+
+</body>
+
 </html>

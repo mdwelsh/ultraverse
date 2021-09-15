@@ -1,0 +1,49 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #273347;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+div.header {
+  background: #161d29;
+  margin: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+div.footer {
+  background: #161d29;
+  margin: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+/* This is an ID. One element has this ID. */
+div.maintitle {
+  background: #161d29;
+  color: #cfe0e6;
+  font-family: 'Righteous', cursive;
+  font-weight: regular;
+  font-size: 48px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+div.maintext {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
