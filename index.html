@@ -20,31 +20,36 @@
 	<div class="header">
 		<!-- Header goes here -->
 		<span class="headerbutton">
-      Home
+      <a href="/">Home</a>
     </span>
-    |
+    <span class = "headerbar"> | </span>
     <span class="headerbutton">
-      About us
+      <a href="/about.html">About us</a>
     </span>
-    |
+    <span class = "headerbar"> | </span>
     <span class="headerbutton">
-      Contact
+      <a href="/contact.html">Contact</a>
     </span>
   </div>
   <div class="maintitle">
-    Ultraverse Games
+    <img src="UltraverseLogoWhite.svg" alt="Ultraverse Games"  id="logoimage">
     <!-- Main title goes here -->
   </div>
   <div class="maintext">
     <!-- Main text goes here -->
     We are an independent games company based in Seattle, WA.
     We develop tabletop and computer games aimed at kids.
+    
+    <hr>
+    
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
   </div>
   <div class="footer">
     <!-- Footer goes here -->
     ©2021 Ultraverse Games, LLC.
   </div>
 
+<!--
   <script>
     console.log("running the script");
     // Get the element with class "maintitle".
@@ -64,13 +69,13 @@
       title.style.textShadow = `#fff ${xpos}px ${ypos}px 4px, #ff0 ${xpos*2}px ${ypos*2}px 10px, #ff8000 ${xpos*xmul}px ${ypos*ymul}px 20px, red ${(xpos*xmul) + (xpos*8)}px ${(ypos*ymul) + (ypos*8)}px 40px`;
 
       counter += 1;
-      //pos = Math.floor(Math.random() * -2);
-      xmul = Math.floor((Math.cos(counter / 7)*10)+Math.random()*10);
-      ymul = Math.floor((Math.sin(counter / 11)*10)+Math.random()*10);
+      xmul = Math.floor((Math.cos(counter / 7)*10)+Math.random()*1);
+      ymul = Math.floor((Math.sin(counter / 11)*10)+Math.random()*1);
 
-    }, 25);
+    }, Math.floor(Math.random() * 50) + 100);
 
   </script>
+  -->
 
 
 </body>

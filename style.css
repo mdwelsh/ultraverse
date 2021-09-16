@@ -1,3 +1,9 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -8,7 +14,31 @@ body {
   font-size: 18px;
 }
 
+span.headerbutton {
+  color: #4a6187;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+span.headerspacer {
+  width: 400px;
+  height: 20px;
+}
+
+.headerbutton a {
+  color: #4a6187;
+  text-decoration: none;
+}
+
+span.headerbar {
+  color: #4a6187;
+  font-size: 15px;
+}
+
 div.header {
+  display: flex;
+  justify-content: flex-end;
   background: #161d29;
   margin: 0px;
   padding-left: 50px;
@@ -25,7 +55,6 @@ div.footer {
   padding-top: 15px;
   padding-bottom: 15px;
 
-  position: absolute;
   width: 100%;
   bottom: 0;
 }
@@ -41,9 +70,21 @@ div.maintitle {
   padding-bottom: 15px;
 }
 
+#logoimage {
+  padding-top: 20px;
+  width: 60%;
+}
+
 div.maintext {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.maintext hr {
+  height: 1px;
+  margin: 10px;
+  border: none;
+  background-color: #4a6187;
 }
