@@ -26,6 +26,11 @@ span.headerspacer {
   height: 20px;
 }
 
+a {
+  color: #4a6187;
+  text-decoration: none;
+}
+
 .headerbutton a {
   color: #4a6187;
   text-decoration: none;
